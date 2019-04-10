@@ -40,7 +40,7 @@ void readData(vector<Person> &p) {
 		p[i].setHoursWorked(hours);
 		
 		p[i].setPayRate(payR);
-	;
+	
 
 	}
 
