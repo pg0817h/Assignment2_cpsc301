@@ -1,11 +1,11 @@
 //Geonhyeong Park
 //CPSC301-03
-#ifndef PERSON_H
-#define PERSON_H
-
+#pragma once 
 #include <string>
 using namespace std;
 
+#ifndef PERSON_H
+#define PERSON_H
 
 class Person
 {
@@ -18,8 +18,8 @@ private:
 	int numberofEmloyees;
 
 public:
-	Person(string fName, string lName, float rate, float hours);
-	
+	Person();
+	string employees2[20];
 	void setLastName(string lName);
 	string getLastName();
 	void setFirstName(string fName);
@@ -30,6 +30,6 @@ public:
 	float getHoursWorked();
 	float totalPay();
 	string fullName();
-	
+	void PrintEmployee();
 };
 #endif // end Person.h
